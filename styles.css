@@ -1,0 +1,407 @@
+/* Default Light Mode Styles */
+body {
+    background-color: #E59BE9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Header */
+header {
+    background-color: #8644A2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #2980b9;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons a:hover {
+    background-color: #3498db;
+}
+
+/* About Me Section */
+.about {
+    background-color: #E59BE9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+.skills {
+    background-color: #E59BE9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skill-bars {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    height: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #2980b9;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    transition: width 0.8s ease-in-out;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #E59BE9;
+    padding: 100px 10px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-list li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    background-color: #E59BE9;
+    padding: 50px 20px;
+    border-top: 2px solid #ff5e99;
+}
+
+.social-media h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-button {
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: #2980b9;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.social-button:hover {
+    background-color: #3498db;
+}
+
+/* Education Section */
+.education {
+    background-color: #E59BE9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-list li {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.education-list li h3 {
+    font-size: 22px;
+    color: #2980b9;
+}
+
+.education-list li p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Scroll to Top Button */
+#scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#scroll-top.show {
+    display: block;
+}
+
+/* Contact Section */
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #791c1c;
+}
+
+/* Available for Work Section */
+.available {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2980b9;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    animation: move-text 10s linear infinite;
+}
+
+@keyframes move-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Dark Mode Toggle Button */
+.theme-toggle-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #3498db;
+}
+
+/* Loading Spinner */
+.spinner {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-top: 5px solid #2980b9;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: none;
+}
+
+#back-to-top:hover {
+    background-color: #3498db;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    .about img {
+        width: 120px;
+        height: 120px;
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+    .about img {
+        width: 150px;
+        height: 150px;
+    }
+    .hero h1 {
+        font-size: 48px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
